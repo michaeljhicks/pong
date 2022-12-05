@@ -15,7 +15,6 @@ l_paddle = Paddle((-350, 0))
 ball = Ball()
 scoreboard = Scoreboard()
 
-
 screen.listen()
 screen.onkey(r_paddle.go_up, "Up")
 screen.onkey(r_paddle.go_down, "Down")
@@ -47,6 +46,5 @@ while game_is_on:
     if ball.xcor() < -380:
         ball.reset_position()
         scoreboard.r_point()
-
 
 screen.exitonclick()
